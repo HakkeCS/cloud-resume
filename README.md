@@ -9,3 +9,7 @@ Built using the ACG Cloud [resume challenge video](https://www.youtube.com/watch
 - Updated HTML template with personal information
 - wrote code for the visitor counter in main.js
     - Need to lean into to js a bit more. 
+
+Setup cosmosDB to store our counter data and trudged through writing an Azure function to pull the data and add to it for each visitor to the site. 
+
+Set up static site hosting with azure blob storage.
