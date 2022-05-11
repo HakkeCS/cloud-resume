@@ -17,9 +17,9 @@ jobs:
     steps:
     - name: 'Checkout GitHub Action'
       uses: actions/checkout@v2
-    -name: login
-    uses: azure/login@v1
-    with:
+    - name: login
+      uses: azure/login@v1
+      with:
           creds: ${{ secrets.CLOUD_CREDS }}
 
     - name: Setup DotNet ${{ env.DOTNET_VERSION }} Environment
