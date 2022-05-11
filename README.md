@@ -1,8 +1,7 @@
 # cloud-resume
 My resume hosted on Azure
 
-
-Built using the ACG Cloud [resume challenge video](https://www.youtube.com/watch?v=ieYrBWmkfno) by Gwyn 
+The ACG Cloud Resume Challenge!
 
 ### What's done so far:
 
