@@ -17,6 +17,7 @@ jobs:
     steps:
     - name: 'Checkout GitHub Action'
       uses: actions/checkout@v2
+      
     - name: login
       uses: azure/login@v1
       with:
@@ -33,8 +34,8 @@ jobs:
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/api'
         dotnet build --configuration Release --output ./output
         popd
-      name: 'Run unit test'
-      shell: pwsh
+    - name: 'Run unit test'
+      shell: bash
       run: |
         pushd './${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/tests'
         dotnet test
